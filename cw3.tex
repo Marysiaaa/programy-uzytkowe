@@ -1,0 +1,131 @@
+\documentclass[12pt, letterpaper, titlepage]{article}
+\usepackage[left=3.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\title{Dokument tworzony na  zajęciach ćw 3}
+\author{Maria Oleksińska}
+\date{06 Listopad 2022}
+\begin{document}
+\maketitle
+
+\begin{table}[h]
+\centering\caption{Przykladowy system decyzyjny (U,Ad), modelujący problem diagnozy medycnej, której efektem jest decyzja o wykonaniu lub nie wykonaniu operacji wyciecia wyrostka robaczkowego, U=\{u1,u2,....u10\}, A=\{a1,a2\}, $d \in D$=\{tak,nie\}}
+
+\begin{tabular}{c| c c c}
+ \hline
+pacjent & bol brzucha &temperatura & operacja\\
+ \hline
+
+
+u1 & mocny & wysoka & tak\\
+u2 & sredni & wysoka & tak\\
+u3 & mocny & srednia & tak\\
+u4 & mocny & niska & tak\\
+u5 & sredni & srednia & tak\\
+u6 & sredni & srednia & nie\\
+u7 & maly & wysoka & nie\\
+u8 & maly & niska & nie\\
+u9 & mocny & niska & nie\\
+u10 & maly & srednia & nie\\
+ \hline
+
+
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[h]
+\centering\caption{Bramka AND}
+
+\begin{tabular}{c c| c}
+
+A & B & Q \\
+ \hline
+0 & 0 & 0\\
+0 & 1 & 0\\
+1 & 0 & 0\\
+1 & 1 & 1\\
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+\centering\caption{Bramka OR}
+
+\begin{tabular}{c c| c}
+
+A & B & Q \\
+ \hline
+0 & 0 & 0\\
+0 & 1 & 1\\
+1 & 0 & 1\\
+1 & 1 & 1\\
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering\caption{Bramka NAND}
+
+\begin{tabular}{c c| c}
+
+A & B & Q \\
+ \hline
+0 & 0 & 1\\
+0 & 1 & 1\\
+1 & 0 & 1\\
+1 & 1 & 0\\
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering\caption{Bramka NOR}
+
+\begin{tabular}{c c| c}
+
+A & B & Q \\
+ \hline
+0 & 0 & 1\\
+0 & 1 & 0\\
+1 & 0 & 0\\
+1 & 1 & 0\\
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering\caption{Bramka XOR}
+
+\begin{tabular}{c c| c}
+ 
+A & B & Q \\
+ \hline
+0 & 0 & 0\\
+0 & 1 & 1\\
+1 & 0 & 1\\
+1 & 1 & 0\\
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering\caption{Bramka NOT}
+
+\begin{tabular}{c| c}
+
+A & B  \\
+ \hline
+0 & 1  \\
+1 & 0 \\
+
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+\end{document}
